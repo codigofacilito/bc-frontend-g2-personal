@@ -1,207 +1,213 @@
-body{
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-img{
-  max-width: 100%;
+body {
+  font-family: "Poppins", sans-serif;
+
+  font-family: "Roboto", sans-serif;
 }
 
+.container {
+  width: min(100%, 69em);
+}
 
-.main-nav {
-  /* display: grid;
-  grid-template-columns: 1fr auto; */
+.nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  
-  margin-right: auto;
   margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
 }
 
-.main-nav p{
+.nav-logo {
+  font-size: 34px;
   font-weight: 700;
-  font-size: 2.12rem;
-  margin: 0;
 }
 
-.main-nav ul{
-  display: inline-flex;
+.nav ul {
   list-style-type: none;
-  gap: 16px;
-  margin:0;
-  padding:0;
+  gap: 32px;
+  display: inline-flex;
 }
 
-.main-cover{
-  background-image: url(../images/figure.png);
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.main .ulmain .limain .lin-main1 {
+  lighting-color: brown;
+  text-decoration: none;
+}
+
+.main-small {
+  font-size: 0.875rem;
+  line-height: 21px;
+  font-weight: 600;
+}
+.main-small::before {
+  position: relative;
+  top: 5px;
+  content: "\2022";
+  color: #00f07d;
+  font-size: 27px;
+  padding: 0.1em;
+}
+
+.section-main1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  color: #122250;
+  margin-left: 88px;
+  justify-content: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+h1 {
+  width: 562px;
+  font-size: 2.75rem;
+  line-height: 4.125rem;
+  text-align: left;
+}
+
+.texto-md {
+  font-size: 1.25rem;
+  line-height: 1.87rem;
+}
+.parrafo-google {
+  color: #ff2eab;
+}
+
+.main-header {
+  display: flex;
+  margin: 0 auto;
+  gap: 142px;
+  flex-wrap: wrap;
+}
+.main-header header {
+  width: min(100%, 562px);
+}
+
+.main-fig {
+  background-image: url("../images/figure.png");
   background-repeat: no-repeat;
   background-position: right center;
+
+  margin-right: 1rem;
   padding-top: 76px;
   padding-bottom: 82px;
 }
 
-.main-cover img{
+.main-fig img {
   width: 400px;
+  position: relative;
+  left: 5em;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.main-header{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 142px;
-  margin: 0 auto;
-}
-
-.main-header header{
-  width: min(100%, 562px);
-}
-
-.main-header .text-s, .main-header .text-xl{
-  margin: 0;
-}
-
-
-
-.green-dot-paragraph::before{
-  content: "";
-  width:10px;
-  height: 10px;
-  background-color: #00F07D;
-  display: inline-block;
-  border-radius: 50%;
-}
-
-.projects{
-  background-color: #C9D6FA;
+.section-imagenes {
+  background-color: #c906fa;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(auto-fit, minmax(426px, 1fr));
 }
 
-@media (max-width: 768px) {
-  .projects{
-    grid-template-columns: 1fr;
-  }
+.section-imagenes img {
+  width: 100%;
 }
 
-.benefits-section{
-  padding-top: 96px;
-  padding-bottom: 87px;
-  background: linear-gradient( rgba(201, 214, 250, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+.texto {
+  margin: 96px 88px;
+  gap: 48px;
+}
+
+.texto .sessionA {
+  margin: 0 auto;
   text-align: center;
 }
-
-.benefits-section h2{
-  font-size: 2.5rem; /* 16px => 40 / 16 = 2.5 */
-  line-height: 3.75rem; /* 16px => 60 / 16 = 3.75 */
-  margin:0;
+h2 {
+  font-size: 40px;
   font-weight: 600;
+  line-height: 60px;
+  color: #122250;
 }
 
-.benefits-section .container{
-  margin: 0 auto;
-}
-
-.benefits-section .container-s{
-  margin: 0 auto;
-}
-
-.benefits{
-  font-size: 1.125rem; /* 16px => 18 / 16 = 1.125 */
+.tex-A {
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.625rem; /* 16px => 26 / 16 = 1.625 */
+  color: #122250;
+  text-align: center;
+  letter-spacing: -0.5px;
+  line-height: 26px;
+  font-family: "Roboto", sans-serif;
+}
+
+.articulos {
+  display: flex;
+  text-align: center;
+  gap: 107px;
+  padding-top: 48px;
+  margin: auto;
+}
+
+h6 {
   color: #122250;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1rem;
-  margin-top: 3rem; /* 16px => 48 / 16 = 3 */
+  font-size: 18px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.p-session {
+  font-size: 14px;
+  font-weight: 400;
+  color: #122250;
+  line-height: 26px;
+  font-family: "Roboto", sans-serif;
 }
 
-.benefits p{
-  margin:0;
-}
-
-.benefits .text-secondary{
-  font-size: 0.875rem; /* 16px => 14 / 16 = 0.875 */
-}
-
-
-.icon{
+.icon-test {
   width: 68px;
   height: 68px;
-  background-color: #F9FBFC;
-  border: 1px solid #9DAFBD;
+
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  margin-bottom: 30px;
 }
 
-.quote{
-  width: min(100%,730px);
-  margin: 0 auto;
+.footer {
+  width: 750px;
+  padding-top: 96px;
+
+  margin: auto;
+}
+.texto-footer {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 46px;
   text-align: center;
-  padding: 96px 20px;
+  color: #366bff;
+  padding-bottom: 60px;
 }
-.main-quote-text{
-  font-weight: 400;
-  font-size: 2.125rem; /* 16px => 34 / 16 = 2.125 */
-  line-height: 2.875rem; /* 16px => 46 / 16 = 2.875 */
-  color: #366BFF;
-}
-
-.quote .text-bold{
-  font-weight: 700;
-  font-size: 0.93rem; /* 16px => 15 / 16 = 0.9375 */
-  margin:0;
+.figure {
+  width: 750px;
+  gap: 20px;
+  display: block;
+  text-align: center;
 }
 
-.quote .text-secondary{
-  font-family: 'Popins', sans-serif;
-  font-size: 0.812rem; /* 16px => 13 / 16 = 0.8125 */
-  margin:0;
-}
-
-.quote img{
-  width: 60px;
-  height: 60px;
+.figure img {
   border-radius: 50%;
-}
-
-/* Clases utilitarias */
-.container{
-  width: min(100%, 69em);
-}
-.container-s{
-  width: min(100%, 33.5em); /* 16px => 537 / 16 = 33.5625 */
-}
-
-.text-s{
-  font-size: 0.875rem; /* 16px => 14 / 16 =  0.875 */
-  line-height: 1.321rem; /* 16px => 21 / 16 = 1.3125 */
-  font-weight: 600;
-}
-
-.text-xl{
-  font-size: 2.75rem; /* 16px => 44 / 16 = 2.75 */
-  line-height: 4.125rem; /* 16px => 66 / 16 = 4.125 */
-}
-
-.text-md{
-  font-size: 1.25rem; /* 16px => 20 / 16 = 1.25 */
-  line-height: 1.875rem; /* 16px => 30 / 16 = 1.875 */
-}
-.text-secondary{
-  color: rgba(18, 34, 80, 0.64);
-  font-weight: 400;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.125rem; /* 16px => 18 / 16 = 1.125 */
-  line-height: 1.625rem; /* 16px => 26 / 16 = 1.625 */
-}
-
-.pink-text{
-  color: #FF2EAB;
+  width: 60px;
 }
