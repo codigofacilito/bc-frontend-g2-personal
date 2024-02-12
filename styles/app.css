@@ -77,7 +77,7 @@ body {
   margin: 0 auto;
 }
 h1 {
-  width: 562px;
+  max-width: 562px;
   font-size: 2.75rem;
   line-height: 4.125rem;
   text-align: left;
@@ -157,6 +157,7 @@ h2 {
 
 .articulos {
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   gap: 107px;
   padding-top: 48px;
@@ -177,6 +178,10 @@ h6 {
   line-height: 26px;
   font-family: "Roboto", sans-serif;
 }
+.parrafo {
+  max-width: 232px;
+  margin: auto;
+}
 
 .icon-test {
   width: 68px;
@@ -186,9 +191,8 @@ h6 {
 }
 
 .footer {
-  width: 750px;
+  max-width: 750px;
   padding-top: 96px;
-
   margin: auto;
 }
 .texto-footer {
@@ -201,7 +205,7 @@ h6 {
   padding-bottom: 60px;
 }
 .figure {
-  width: 750px;
+  max-width: 750px;
   gap: 20px;
   display: block;
   text-align: center;
@@ -210,4 +214,11 @@ h6 {
 .figure img {
   border-radius: 50%;
   width: 60px;
+}
+
+@media (max-width: 472px) {
+  h1 {
+    font-size: 25px;
+    line-height: 1.5;
+  }
 }
