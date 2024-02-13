@@ -216,6 +216,23 @@ h6 {
   width: 60px;
 }
 
+.icon-test {
+  width: 68px;
+  height: 68px;
+  border: 1px solid #90afbd;
+  background-color: #f9fbfc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.figure img {
+  border-radius: 50%;
+  width: 60px;
+}
+
 @media (max-width: 472px) {
   h1 {
     font-size: 25px;
