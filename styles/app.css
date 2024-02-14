@@ -129,17 +129,29 @@ h1 {
 }
 
 .texto {
-  gap: 107px;
-  height: 308px;
-  margin: auto;
   padding-top: 96px;
+  padding-bottom: 87px;
+  background: linear-gradient(
+    rgba(201, 214, 250, 0.2) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  text-align: center;
+}
 
+.texto-container {
+  height: 308px;
+
+  padding-top: 96px;
+}
+
+.session-articulos {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1104px;
 }
 
 .texto .sessionA {
-  margin: 0 auto;
-  text-align: center;
   padding-bottom: 48px;
 }
 h2 {
@@ -159,14 +171,6 @@ h2 {
   font-family: "Roboto", sans-serif;
 }
 
-.articulos {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-
-  padding-top: 48px;
-  flex-wrap: wrap;
-}
 h6 {
   color: #122250;
 
