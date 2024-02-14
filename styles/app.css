@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: min(100%, 69em);
+  width: min(100%, 70em);
 }
 
 .nav {
@@ -130,8 +130,11 @@ h1 {
 }
 
 .texto {
-  margin: 96px 88px;
-  gap: 48px;
+  gap: 107px;
+  height: 308px;
+  margin: auto;
+  width: 100%;
+  max-width: 1104px;
 }
 
 .texto .sessionA {
@@ -157,11 +160,10 @@ h2 {
 
 .articulos {
   display: flex;
-  flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
   gap: 107px;
   padding-top: 48px;
-  margin: auto;
 }
 
 h6 {
