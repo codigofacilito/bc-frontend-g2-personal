@@ -114,7 +114,6 @@ h1 {
 .main-fig img {
   width: 400px;
   position: relative;
-  left: 5em;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -133,13 +132,15 @@ h1 {
   gap: 107px;
   height: 308px;
   margin: auto;
-  width: 100%;
+  padding-top: 96px;
+
   max-width: 1104px;
 }
 
 .texto .sessionA {
   margin: 0 auto;
   text-align: center;
+  padding-bottom: 48px;
 }
 h2 {
   font-size: 40px;
@@ -162,10 +163,10 @@ h2 {
   display: flex;
   text-align: center;
   justify-content: center;
-  gap: 107px;
-  padding-top: 48px;
-}
 
+  padding-top: 48px;
+  flex-wrap: wrap;
+}
 h6 {
   color: #122250;
 
@@ -194,7 +195,8 @@ h6 {
 
 .footer {
   max-width: 750px;
-  padding-top: 96px;
+  padding-top: 183px;
+
   margin: auto;
 }
 .texto-footer {
@@ -211,6 +213,8 @@ h6 {
   gap: 20px;
   display: block;
   text-align: center;
+  padding-top: 60px;
+  padding-bottom: 97px;
 }
 
 .figure img {
@@ -228,6 +232,7 @@ h6 {
   justify-content: center;
   justify-items: center;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .figure img {
