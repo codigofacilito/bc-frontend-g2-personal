@@ -78,6 +78,9 @@ body {
 }
 h1 {
   max-width: 562px;
+  font-weight: 600;
+
+  font-family: "Poppins", sans-serif;
   font-size: 2.75rem;
   line-height: 4.125rem;
   text-align: left;
@@ -167,7 +170,7 @@ h2 {
   font-family: "Roboto", sans-serif;
 }
 
-h6 {
+h3 {
   color: #122250;
 
   font-size: 18px;
