@@ -138,16 +138,12 @@ h1 {
   text-align: center;
 }
 
-.texto-container {
-  height: 308px;
-
-  padding-top: 96px;
-}
-
 .session-articulos {
   margin: auto;
+  padding-top: 48px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   max-width: 1104px;
 }
 
